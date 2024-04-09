@@ -1,6 +1,6 @@
 #!/bin/bash
 # =========================================
-# Auther  : givpn
+# Auther  : maptechgh
 # =========================================
 RED='\033[0;31m'
 NC='\033[0m'
@@ -89,7 +89,7 @@ clear
 m-system
 ;;
 *)
-echo "Please enter an correct number"
+echo "Please enter a correct number"
 clear
 dns
 ;;
