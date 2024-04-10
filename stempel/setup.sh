@@ -25,7 +25,7 @@ yellow() { echo -e "\\033[33;1m${*}\\033[0m"; }
 green() { echo -e "\\033[32;1m${*}\\033[0m"; }
 red() { echo -e "\\033[31;1m${*}\\033[0m"; }
 # domain random
-#CDN="https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh"
+#CDN="https://raw.githubusercontent.com/AVEGAH/AutoScriptXray/master/ssh"
 cd /root
 #System version number
 if [ "${EUID}" -ne 0 ]; then
@@ -154,15 +154,15 @@ echo -e "$BGreen      Install SSH Websocket           $NC"
 echo -e "\e[33m-----------------------------------\033[0m"
 sleep 0.5
 clear
-wget https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/AVEGAH/AutoScriptXray/master/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 #Instal Xray
 echo -e "\e[33m-----------------------------------\033[0m"
 echo -e "$BGreen          Install XRAY              $NC"
 echo -e "\e[33m-----------------------------------\033[0m"
 sleep 0.5
 clear
-wget https://raw.githubusercontent.com/givpn/AutoScriptXray/master/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
-wget https://raw.githubusercontent.com/givpn/AutoScriptXray/master/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
+wget https://raw.githubusercontent.com/AVEGAH/AutoScriptXray/master/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
+wget https://raw.githubusercontent.com/AVEGAH/AutoScriptXray/master/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
 cat> /root/.profile << END
 # ~/.profile: executed by Bourne-compatible login shells.
@@ -201,7 +201,7 @@ if [ ! -f "/etc/log-create-shadowsocks.log" ]; then
 echo "Log Shadowsocks Account " > /etc/log-create-shadowsocks.log
 fi
 history -c
-serverV=$( curl -sS https://raw.githubusercontent.com/givpn/AutoScriptXray/master/menu/versi  )
+serverV=$( curl -sS https://raw.githubusercontent.com/AVEGAH/AutoScriptXray/master/menu/versi  )
 echo $serverV > /opt/.ver
 aureb=$(cat /home/re_otm)
 b=11
@@ -214,17 +214,11 @@ fi
 curl -sS ipv4.icanhazip.com > /etc/myipvps
 echo ""
 echo "=================================================================="  | tee -a log-install.txt
-echo "      ___                                    ___         ___      "  | tee -a log-install.txt
-echo "     /  /\        ___           ___         /  /\       /__/\     "  | tee -a log-install.txt
-echo "    /  /:/_      /  /\         /__/\       /  /::\      \  \:\    "  | tee -a log-install.txt
-echo "   /  /:/ /\    /  /:/         \  \:\     /  /:/\:\      \  \:\   "  | tee -a log-install.txt
-echo "  /  /:/_/::\  /__/::\          \  \:\   /  /:/~/:/  _____\__\:\  "  | tee -a log-install.txt
-echo " /__/:/__\/\:\ \__\/\:\__   ___  \__\:\ /__/:/ /:/  /__/::::::::\ "  | tee -a log-install.txt
-echo " \  \:\ /~~/:/    \  \:\/\ /__/\ |  |:| \  \:\/:/   \  \:\~~\~~\/ "  | tee -a log-install.txt
-echo "  \  \:\  /:/      \__\::/ \  \:\|  |:|  \  \::/     \  \:\  ~~~  "  | tee -a log-install.txt
-echo "   \  \:\/:/       /__/:/   \  \:\__|:|   \  \:\      \  \:\      "  | tee -a log-install.txt
-echo "    \  \::/        \__\/     \__\::::/     \  \:\      \  \:\     "  | tee -a log-install.txt
-echo "     \__\/                       ~~~~       \__\/       \__\/ 1.0 "  | tee -a log-install.txt
+echo "       __  __    _    ____ _____ _____ ____ _   _      " | tee -a log-install.txt
+echo "      |  \/  |  / \  |  _ \_   _| ____/ ___| | | |      " | tee -a log-install.txt
+echo "      | |\/| | / _ \ | |_) || | |  _|| |   | |_| |      " | tee -a log-install.txt
+echo "      | |  | |/ ___ \|  __/ | | | |__| |___|  _  |      " | tee -a log-install.txt
+echo "      |_|  |_/_/   \_\_|    |_| |_____\____|_| |_|      " | tee -a log-install.txt
 echo "=================================================================="  | tee -a log-install.txt
 echo ""
 echo "   >>> Service & Port"  | tee -a log-install.txt
@@ -249,7 +243,7 @@ echo "   - Trojan gRPC              : 443" | tee -a log-install.txt
 echo "   - Shadowsocks gRPC         : 443" | tee -a log-install.txt
 echo ""
 echo "=============================Contact==============================" | tee -a log-install.txt
-echo "---------------------------t.me/givpn-----------------------------" | tee -a log-install.txt
+echo "---------------------------t.me/maptechgh-----------------------------" | tee -a log-install.txt
 echo "==================================================================" | tee -a log-install.txt
 echo -e ""
 echo ""
