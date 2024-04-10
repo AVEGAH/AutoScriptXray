@@ -2,8 +2,8 @@
 # =========================================
 # Quick Setup | Script Setup Manager
 # Edition : Stable Edition 1.0
-# Auther  : givpn
-# (C) Copyright 2023
+# Auther  : maptechgh
+# (C) Copyright 2024
 # =========================================
 clear
 echo Installing Websocket-SSH Python
