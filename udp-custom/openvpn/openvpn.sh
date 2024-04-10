@@ -2,8 +2,8 @@
 # =========================================
 # Quick Setup | Script Setup Manager
 # Edition : Stable Edition 1.0
-# Auther  : givpn
-# (C) Copyright 2023
+# Auther  : maptech
+# (C) Copyright 2024
 # =========================================
 # pewarna hidup
 BGreen='\e[1;32m'
@@ -20,13 +20,13 @@ apt -y install squid3
 sleep 1
 echo "\e[1;32m Proses Download squid.. \e[0m"
 apt -y install squid
-wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/udp-custom/openvpn/squid3.conf"
+wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/AVEGAH/AutoScriptXray/master/udp-custom/openvpn/squid3.conf"
 sed -i $MYIP2 /etc/squid/squid.conf
 
 # // OpenVPN
 sleep 1
 echo "\e[1;32m Proses Download OpenVPN.. \e[0m"
-wget https://raw.githubusercontent.com/givpn/AutoScriptXray/master/udp-custom/openvpn/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
+wget https://raw.githubusercontent.com/AVEGAH/AutoScriptXray/master/udp-custom/openvpn/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
 
 cd
 chown -R www-data:www-data /home/vps/public_html
@@ -56,19 +56,13 @@ echo -e "[ ${BGreen}ok${NC} ] Restarting vnstat "
 /etc/init.d/squid restart >/dev/null 2>&1
 clear
 echo ""
-echo "=================================================================="  | tee -a log-install.txt
-echo "      ___                                    ___         ___      "  | tee -a log-install.txt
-echo "     /  /\        ___           ___         /  /\       /__/\     "  | tee -a log-install.txt
-echo "    /  /:/_      /  /\         /__/\       /  /::\      \  \:\    "  | tee -a log-install.txt
-echo "   /  /:/ /\    /  /:/         \  \:\     /  /:/\:\      \  \:\   "  | tee -a log-install.txt
-echo "  /  /:/_/::\  /__/::\          \  \:\   /  /:/~/:/  _____\__\:\  "  | tee -a log-install.txt
-echo " /__/:/__\/\:\ \__\/\:\__   ___  \__\:\ /__/:/ /:/  /__/::::::::\ "  | tee -a log-install.txt
-echo " \  \:\ /~~/:/    \  \:\/\ /__/\ |  |:| \  \:\/:/   \  \:\~~\~~\/ "  | tee -a log-install.txt
-echo "  \  \:\  /:/      \__\::/ \  \:\|  |:|  \  \::/     \  \:\  ~~~  "  | tee -a log-install.txt
-echo "   \  \:\/:/       /__/:/   \  \:\__|:|   \  \:\      \  \:\      "  | tee -a log-install.txt
-echo "    \  \::/        \__\/     \__\::::/     \  \:\      \  \:\     "  | tee -a log-install.txt
-echo "     \__\/                       ~~~~       \__\/       \__\/ 1.0 "  | tee -a log-install.txt
-echo "=================================================================="  | tee -a log-install.txt
+echo "============================================"  | tee -a log-install.txt
+echo "__  __    _    ____ _____ _____ ____ _   _" | tee -a log-install.txt
+echo "|  \/  |  / \  |  _ \_   _| ____/ ___| | | |" | tee -a log-install.txt
+echo "| |\/| | / _ \ | |_) || | |  _|| |   | |_| |" | tee -a log-install.txt
+echo "| |  | |/ ___ \|  __/ | | | |__| |___|  _  |" | tee -a log-install.txt
+echo "|_|  |_/_/   \_\_|    |_| |_____\____|_| |_|" | tee -a log-install.txt
+echo "============================================"  | tee -a log-install.txt
 echo ""
 echo "   >>> Service & Port"  | tee -a log-install.txt
 echo "   - OpenSSH                  : 22"  | tee -a log-install.txt
@@ -94,7 +88,7 @@ echo "   - Trojan gRPC              : 443" | tee -a log-install.txt
 echo "   - Shadowsocks gRPC         : 443" | tee -a log-install.txt
 echo ""
 echo "=============================Contact==============================" | tee -a log-install.txt
-echo "---------------------------t.me/givpn-----------------------------" | tee -a log-install.txt
+echo "---------------------------t.me/maptechgh-------------------------" | tee -a log-install.txt
 echo "==================================================================" | tee -a log-install.txt
 echo -e ""
 echo ""
