@@ -40,7 +40,7 @@ PID=`ps -ef |grep -v grep | grep sshws |awk '{print $2}'`
 
 if [[ ! -z "${PID}" ]]; then
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[0;41;36m            TRIAL SSH              \E[0m"
+echo -e "\E[0;41;36m          🌍 TRIAL SSH 🌍         \E[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "Username   : $Login"
 echo -e "Password   : $Pass"
@@ -64,13 +64,13 @@ echo -e "Payload WSS"
 echo -e "GET wss://isi_bug_disini HTTP/1.1[crlf]Host: ${domen}[crlf]Upgrade: websocket[crlf][crlf]"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "Payload WS"
-echo -e "GET / HTTP/1.1[crlf]Host: $domen[crlf]Upgrade: websocket[crlf][crlf]"
+echo -e "GET ws://[rotate=auth.mtn.com.gh;uhas.edu.gh] HTTP/1.1[crlf]Host: auth.ayo4u.com[crlf]Upgrade: websocket[crlf][crlf]-_- ws:// $domen HTTP/1.1[crlf]Host: auth.ayo4u.com[crlf]Upgrade: websocket[crlf][crlf]"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 
 else
 
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[0;41;36m            TRIAL SSH              \E[0m"
+echo -e "\E[0;41;36m         🌍 TRIAL SSH 🌍          \E[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "Username   : $Login"
 echo -e "Password   : $Pass"
@@ -94,7 +94,7 @@ echo -e "Payload WSS"
 echo -e "GET wss://isi_bug_disini HTTP/1.1[crlf]Host: ${domen}[crlf]Upgrade: websocket[crlf][crlf]"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "Payload WS"
-echo -e "GET / HTTP/1.1[crlf]Host: $domen[crlf]Upgrade: websocket[crlf][crlf]"
+echo -e "GET ws://[rotate=auth.mtn.com.gh;uhas.edu.gh] HTTP/1.1[crlf]Host: auth.ayo4u.com[crlf]Upgrade: websocket[crlf][crlf]-_- ws:// $domen HTTP/1.1[crlf]Host: auth.ayo4u.com[crlf]Upgrade: websocket[crlf][crlf]"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 fi
 echo ""
