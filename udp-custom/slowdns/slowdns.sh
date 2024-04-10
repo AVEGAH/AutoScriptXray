@@ -1,9 +1,9 @@
 # =========================================
 # Quick Setup | Script Setup Manager
 # Edition : Stable Edition 1.0
-# Auther  : givpn
+# Auther  : maptechgh
 # Kuota Habisss
-# (C) Copyright 2023
+# (C) Copyright 2024
 # =========================================
 # pewarna hidup
 BGreen='\e[1;32m'
